@@ -1,0 +1,115 @@
+
+*
+{
+	font-size: 25px;
+}
+
+h1
+{
+	font-size: 30px;
+}
+
+h2
+{
+	font-size: 28px;
+}
+
+h3
+{
+	font-size: 27px;
+}
+
+.searchmenu
+{
+	border-bottom: 2px #F2F2F2 solid;
+}
+
+#filres /* Filtres en flex, alignement colonne */
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.searchfilter /* Boutons de filtres en flex, vont à la ligne quand plus de place */
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#resultsglobal
+{
+	flex-direction: column;
+}
+
+#populaires /* Changement de l'ordre et annulation des bords arrondis */
+{
+	order:1;
+	border-radius: 0px;
+	width: 100%;
+	margin:auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#populaires figure
+{
+	height: 300px;
+	width: 95%;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+#populaires img
+{
+	height: 95%;
+	width: 200px;
+}
+
+#populaires figcaption
+{
+	height: 100%;
+}
+
+#hebergements /* Changement de l'ordre et annulation des bords arrondis. Fond blanc */
+{
+	order:2;
+	background-color: #FFFFFF;
+	border-radius: 0px;
+	width: 100%;
+}
+
+#carteshebergements
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#carteshebergements figure
+{
+	width: 100%;
+}
+
+#activites
+{
+	display: flex;
+	flex-direction: column;
+}
+
+
+#activites img
+{
+	width: 100%;
+	height: 350px;
+}
+
+#activites figure figcaption /* Agrandissement de la marge intérieure de la légende des photos */
+{
+	padding: 50px;
+}
+
+footer /* Mise en page du footer en colonne */
+{
+	display: flex;
+	flex-direction: column;
+}

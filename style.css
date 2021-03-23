@@ -1,0 +1,415 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/static/Raleway-Regular.ttf');
+}
+
+* /* Définition de la typo du site */
+{
+	font-family: Raleway, "Arial Black", Times, "Times New Roman", sans-serif;
+	}
+
+h1 /* Les titres H1 sont en gras 20px */
+{
+	font-weight: bold ;
+	font-size: 20px;
+	}
+
+h2 /* Définition de la taille de H2, titres des rubriques */
+{
+	font-size: 18px;
+}
+
+h3 /* Définition de la taille des H3, titres des cartes */
+{
+	font-size: 17px;
+}
+
+header /* Définition du header en flexbox, avec de l'espace entre les éléments */
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+ul /* Suppression des puces dans les menus */
+{
+	list-style-type: none;
+}
+
+a /* Suppression du soulignement auto des liens */
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+
+img[id="logo"]
+{
+	width: 100px;
+}
+
+img /* Les images seront rognées et pas déformées si elles dépassent les dimensions fixées */
+{
+	object-fit: cover;
+}
+
+
+.searchmenu a /* Définition d'une bordure haute blanche au dessus du menu*/
+{
+	color: #000000;
+	padding-top: 20px;
+}
+
+#menu /* Définition du menu en flexbox avec une bordure au dessus blanche de 2px */
+{
+	display: flex;
+	border-top: 2px solid #FFFFFF;
+}
+
+.searchmenu a:hover /* au survol des liens du menu, le texte passe et la bordure au dessus passent en bleu */
+{
+	color: #0065FC;
+	border-top: 2px solid;
+}
+
+li[class="searchmenu"] /* Définition d'une marge intérieure droite pour espacer les différentes entrées du menu */
+{
+	margin-right: 20px;
+}
+
+.inscription a /* Exception pour la partie inscription qui reste en bleu et gras */
+{
+	color: #0065FC;
+	font-weight: bold;
+}
+
+form /* Définition de la dimension du moteur de recherche -
+Définition d'une bordure grise de 1px, couleur de fond grise et bords arrondis */
+{
+	display: flex;
+	align-items: center;
+	width: 300px;
+	height: 40px;
+	border: 1px #F2F2F2 solid;
+	border-radius: 10px;
+}
+
+#barrerecherche span i /* Définition de la dimension du picto du moteur de recherche, qui est centré et aligné */
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background-color: #F2F2F2;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+input[type="search"] /* Suppression de la bordure auto du champ de recherche */
+{
+	border: none;
+	width: 250px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#champrecherche::placeholder /* le préremplissage s'affiche en noir et non gris */
+{
+	color: #000000;
+}
+
+#rechercher /* le bouton recherche est blanc sur fond bleu avec les bord droits arrondis à droite */
+{
+	background-color: #0065FC;
+	color: #FFFFFF;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-weight: bold;
+	font-size: 15px;
+	border: none;
+	cursor: pointer;
+	height: 42px;
+}
+
+#filtres /* les filtres sont en flexbox pour dispo à l'horizontal */
+{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+
+.searchfilter /* les boutons filtres ont une bordure arrondie grise, le texte est en gras */
+{
+	display : flex;
+	align-items : center;
+	margin: 10px;
+	border: 2px #F2F2F2 solid;
+	border-radius: 50px;
+	padding-right: 10px;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+
+.searchfilter:hover /* au survol, les filtres passent en bleu avec typo blanche */
+{
+	background-color: #0065FC;
+	color: #FFFFFF;
+}
+
+.searchfilter i /* les picto des filtres sont en bleu sur fond bleu clair avec les bords arrondis pour former un rond
+Les picto sont centrés et alignés par rapport à leur contenant */
+{
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border: 10px #DEEBFF solid;
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.textbuttonfilter /* le texte des boutons filtres à une marge de 10px à gauche et à droite. Aucune supp en haut et en bas */
+{
+	margin: 0 10px;
+}
+
+#inforesults /* la phrase d'info sur les résultats de recherches sont à l'horizontal et les élements qui les composent sont alignés entre eux */
+{
+	display: flex;
+	align-items: center;
+}
+
+#logoinformations /* Le logo I est bleu avec une bordure ronde grise. Le I est centré et aligné avec sa bordure
+On laisse une marge droite pour ne pas coller le texte qui suit */
+{
+	color: #0065FC;
+	border: 2px #F2F2F2 solid;
+	border-radius: 100%;
+	height: 20px;
+	width: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 5px;
+}
+
+
+.etoilesbleues
+{
+	color: #0065FC;
+	font-size: 12px;
+}
+
+.etoilesgrises
+{
+	color: #F2F2F2;
+	font-size: 12px;
+}
+
+
+#resultsglobal /* Définition des résultats de recherche en flexbox pour affichage des blocs à l'horizontal */
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+#hebergements /* Les résultats hébergements occupent 70% de la largeur de l'écran avec un fond gris et des bors arrondis.
+Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
+{
+
+	width: 70%;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+}
+
+#carteshebergements /* Les éléments dans la partie hébergement sont en flexbox et vont à la ligne quand plus assez de place */
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.textehebergement
+{
+	margin-left: 27px;
+}
+
+#carteshebergements img /* Définition de la taille des images pour les résultat hébergements. Les angles du haut sont arrondis */
+{
+	width: 100%;
+	height: 130px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin: auto;
+}
+
+
+#carteshebergements figure /* les cartes de la partie hébergement sont en flexbox et vont à la ligne automatiquement quand plus de place. Elles possèdent un fond blanc et une ombre */
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 4px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #ECEBEB;
+	width: 270px;
+	height: 200px;
+}
+
+
+#carteshebergements h3 /* Réduction de la marge intérieure pour les H3 des cartes hébergements */
+{
+	margin: 2px;
+}
+
+#carteshebergements p /* Réduction de la marge intérieure pour les p des cartes hébergement */
+{
+	margin: 2px;
+}
+
+#populaires /* Définition des résultats populaires en flex box, occupe 27% de la taille de l'écran, fond gris et bords arrondis */
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 28%;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#populaires figcaption
+{
+	display: flex;
+	flex-direction: column;
+	height: 130px;
+}
+
+#populaires figcaption h3
+{
+	margin-bottom: 2px;
+	margin-top: 5px;
+}
+
+#populaires figcaption p
+{
+	margin-bottom: 2px;
+}
+
+
+h2[id="titrepop"]
+{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	margin: 10px;
+}
+
+#populaires img /* Définition de la taille des images populaires avec les bors gauche arrondis */
+{
+	width: 90px;
+	height: 90%;
+	float: left;
+	margin: 5px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+
+#populaires figure /* Définition des dimensions de cartes de la partie populaires, possèdent un fond blanc et une ombre 
+Le contenu des cartes est centré */
+{
+	margin: auto;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #ECEBEB;
+	
+	width: 90%;
+	height: 130px;
+}
+
+#activites /* Définition de la partie activités en flexbox pour affichage horizontal */
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#activites figure /* les cartes de l'encart activités ont des bords ronds, ombres et marge de 15px.
+Le fond est blanc */
+{
+	border-radius: 20px;
+	box-shadow: 3px 3px 5px #F2F2F2;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+}
+
+#activites figure figcaption /* Agrandissement de la marge intérieure de la légende des photos */
+{
+	padding: 10px;
+}
+
+
+.imghaute /* Définition de la taille des grandes images dans le bloc activité */
+{
+	width: 300px;
+	height: 445px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.imgpetite /* Défintion de la taille des petites images dans le bloc activité */
+{
+	width: 300px;
+	height: 190px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.blocactivitesleft /* Les petites images de gauche dans activités sont en colonne */
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.blocactivitesright /* Les petites images de droite dans activités sont en colonne */
+{
+	display: flex;
+	flex-direction: column;
+}
+
+
+footer /* Footer en flexbox sur fond gris */
+{
+	display: flex;
+	background-color: #F2F2F2;
+	justify-content: space-around;
+}
+
+
+footer a /* Les liens du footer sont en noir */
+{
+	color: #000000;
+}
+
+footer p /* Les paragraphes du footer sont en gras */
+{
+	font-weight: bold;
+}
+
+footer li /* Les listes du footer n'ont aucun effet de style */
+{
+	font-weight: normal;
+	margin: 5px;
+}
