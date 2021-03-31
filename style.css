@@ -88,10 +88,10 @@ Définition d'une bordure grise de 1px, couleur de fond grise et bords arrondis 
 {
 	display: flex;
 	align-items: center;
-	width: 300px;
+	width: 400px;
 	height: 40px;
 	border: 1px #F2F2F2 solid;
-	border-radius: 10px;
+	border-radius: 12px;
 }
 
 #barrerecherche span i /* Définition de la dimension du picto du moteur de recherche, qui est centré et aligné */
@@ -99,8 +99,8 @@ Définition d'une bordure grise de 1px, couleur de fond grise et bords arrondis 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 40px;
-	height: 40px;
+	width: 42px;
+	height: 42px;
 	background-color: #F2F2F2;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
@@ -109,7 +109,7 @@ Définition d'une bordure grise de 1px, couleur de fond grise et bords arrondis 
 input[type="search"] /* Suppression de la bordure auto du champ de recherche */
 {
 	border: none;
-	width: 250px;
+	width: 100%;
 	font-size: 15px;
 	font-weight: bold;
 }
@@ -130,6 +130,12 @@ input[type="search"] /* Suppression de la bordure auto du champ de recherche */
 	border: none;
 	cursor: pointer;
 	height: 42px;
+	margin: 0;
+}
+
+#rechercher i /* Suppression de l'icone loupe */
+{
+	display: none;
 }
 
 #filtres /* les filtres sont en flexbox pour dispo à l'horizontal */
@@ -137,6 +143,7 @@ input[type="search"] /* Suppression de la bordure auto du champ de recherche */
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	font-weight: bold;
 
 }
 
@@ -337,12 +344,19 @@ Le contenu des cartes est centré */
 	height: 130px;
 }
 
+#activity h2
+{
+	margin-left: 20px;
+}
+
 #activites /* Définition de la partie activités en flexbox pour affichage horizontal */
 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	width: 100%;
 }
+
 
 #activites figure /* les cartes de l'encart activités ont des bords ronds, ombres et marge de 15px.
 Le fond est blanc */
@@ -351,8 +365,9 @@ Le fond est blanc */
 	box-shadow: 3px 3px 5px #F2F2F2;
 	background-color: #FFFFFF;
 	display: flex;
-	flex-direction: column;
-	margin: 15px;
+	
+	margin: 10px;
+	padding: 0px;
 }
 
 #activites figure figcaption /* Agrandissement de la marge intérieure de la légende des photos */
@@ -363,7 +378,7 @@ Le fond est blanc */
 
 .imghaute /* Définition de la taille des grandes images dans le bloc activité */
 {
-	width: 300px;
+	width: 330px;
 	height: 445px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
@@ -371,7 +386,7 @@ Le fond est blanc */
 
 .imgpetite /* Défintion de la taille des petites images dans le bloc activité */
 {
-	width: 300px;
+	width: 330px;
 	height: 190px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
@@ -403,7 +418,7 @@ footer a /* Les liens du footer sont en noir */
 	color: #000000;
 }
 
-footer p /* Les paragraphes du footer sont en gras */
+footer li p /* Les paragraphes du footer sont en gras */
 {
 	font-weight: bold;
 }

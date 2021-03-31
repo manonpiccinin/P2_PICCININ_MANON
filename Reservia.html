@@ -3,8 +3,10 @@
 <!-- HEAD : définition de l'encodage, lien avec les feuilles de style et bibliothèque de type. Définition du title, visible dans l'onglet du navigateur -->
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css"/>
-	<link rel="stylesheet" media="screen and (max-device-width: 450px)" href="style-mobile.css" />
+	<link rel="stylesheet" media="screen and (max-width: 480px)" href="style-mobile.css" />
+	<link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 1024px)" href="style-tablette.css" />
 	<script src="https://kit.fontawesome.com/4bb817e232.js" crossorigin="anonymous"></script>
 	<title>Reservia, le site de recherche d'hôtels et activités pour vos vacances au meilleur prix</title>
 </head>
@@ -23,10 +25,10 @@
 	<!-- PARTIE RECHERCHE ET FILTRES -->
 	<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 		<p>En plein centre ville ou en pleine nature</p>
-		<form id="barrerecherche">
+		<form id="barrerecherche" method="get">
 				<span><i class="fas fa-map-marker-alt"></i></span>
 				<input type="search" name="ville" placeholder="Marseille, France" size="30" id="champrecherche"/>
-				<input type="submit" value="Rechercher" id="rechercher"/>
+				<button id="rechercher"><span>Rechercher</span><i class="fas fa-search"></i></button>
 		</form>
 		<br/>
 	<div id="filtres">
@@ -133,8 +135,9 @@
 	</div>
 	<br/>
 	<!-- RESULTATS DE LA RECHERCHE / PARTIE 3 : ACTIVITES -->
-		<h2>Activités à Marseille</h2>
-			<section id="activites">
+			<section id="activity">
+				<h2>Activités à Marseille</h2>
+				<div id="activites">
 			<figure><a href="#">
 				<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port" class="imghaute">
 			<figcaption>Vieux Port</figcaption>
@@ -169,6 +172,7 @@
 			</a>
 			</figure>
 			</div>
+		</div>
 		</section>
 		<!-- FOOTER : partie infos utiles, mentions légales -->
 		<footer>
