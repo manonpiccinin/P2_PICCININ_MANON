@@ -4,33 +4,57 @@ header
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	position: relative;
 }
 
-nav
+li[class="inscription"] /* Inscription sort du flux HTML pour se positionner en haut à droite */
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin: 20px;
+}
+
+nav /* Le menu occupe 100% de la largeur de la page */
 {
 	width: 100%;
 }
+
 
 #menu /* Suppression du padding sur le menu */
 {
 	padding: 0px;
 	margin: auto;
-	justify-content: space-between;
+	margin-top: 10px;
 }
 
 
-.searchmenu a /* mise en place d'une bordure en bas sur le menu */
+li[class="searchmenu"] /* mise en place d'une bordure en bas sur le menu */
 {
 	border-bottom: 2px #F2F2F2 solid;
+	padding-bottom: 5px;
+	margin: 0px;
+	width: 100%;
 }
 
-.searchmenu a:hover /* au survol des liens du menu, le texte et la bordure au dessous passent en bleu */
+li[class="searchmenu"]:hover /* au survol des liens du menu, le texte et la bordure au dessous passent en bleu */
 {
 	color: #0065FC;
 	border-bottom: 2px #0065FC solid;
 	border-top: none;
 }
 
+.searchmenu a /* Centrage des textes du menu header */
+{
+	display: flex;
+	justify-content: center;
+}
+
+.searchmenu a:hover
+{
+	border-bottom: none;
+	border-top: none;
+}
 
 form /* Le moteur de recherche occupe 100% de la largeur */
 {
@@ -60,7 +84,7 @@ input[type="search"] /* la zone de saisie occupe 100% de l'espace restant entre 
 
 #rechercher /* Définition de la largeur du bouton de recherche */
 {
-	width: 42px;
+	width: 50px;
 }
 
 #filtres h3
@@ -94,13 +118,18 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 	padding: 0px;
 }
 
-#populaires figure /* Définition de la taille des cartes Populaires */
+#populaires a /* Définition de la taille des cartes Populaires */
 {
 	height: 180px;
 	width: 95%;
 	margin: auto;
 	margin-bottom: 20px;
 	padding-bottom: 2px;
+}
+
+#populaires figure
+{
+	height: 100%;
 }
 
 #populaires img /* Définition de la taille des images Populaires */
@@ -140,7 +169,7 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 }
 
 
-#carteshebergements figure /* Définition de la dimension des cartes hébergments */
+#carteshebergements a /* Définition de la dimension des cartes hébergments */
 {
 	width: 95%;
 	height: 230px;
@@ -167,7 +196,7 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 	flex-direction: column;
 }
 
-#activites figure /* Suppression des marges gauche et droite des cartes activités */
+#activites a /* Suppression des marges gauche et droite des cartes activités */
 {
 	margin-left: 0px;
 	margin-right: 0px;

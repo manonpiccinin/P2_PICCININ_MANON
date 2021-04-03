@@ -1,0 +1,29 @@
+#activites /* Mise en place des blocs activités en flex */
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#activites a /* Suppression des marges gauche et droite des cartes activités
+Les cartes occupent presque la moitié de la largeur de l'écran */
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 30%;
+}
+
+#activites img /* Définition de la taille des images activités */
+{
+	width: 100%;
+	height: 150px;
+}
+
+.blocactivitesleft /* Annulation du display flex attribué aux petites images activités sur desk */
+{
+	display: contents;
+}
+
+.blocactivitesright /* Annulation du display flex attribué aux petites images activités sur desk */
+{
+	display: contents;
+}

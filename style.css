@@ -257,7 +257,7 @@ Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
 }
 
 
-#carteshebergements figure /* les cartes de la partie hébergement sont en flexbox et vont à la ligne automatiquement quand plus de place. Elles possèdent un fond blanc et une ombre */
+#carteshebergements a /* les cartes de la partie hébergement sont en flexbox et vont à la ligne automatiquement quand plus de place. Elles possèdent un fond blanc et une ombre */
 {
 	display: flex;
 	flex-wrap: wrap;
@@ -271,6 +271,10 @@ Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
 	height: 200px;
 }
 
+#carteshebergements figure
+{
+	margin: auto;
+}
 
 #carteshebergements h3 /* Réduction de la marge intérieure pour les H3 des cartes hébergements */
 {
@@ -324,7 +328,7 @@ h2[id="titrepop"]
 #populaires img /* Définition de la taille des images populaires avec les bors gauche arrondis */
 {
 	width: 90px;
-	height: 90%;
+	height: 120px;
 	float: left;
 	margin: 5px;
 	border-top-left-radius: 10px;
@@ -332,16 +336,20 @@ h2[id="titrepop"]
 }
 
 
-#populaires figure /* Définition des dimensions de cartes de la partie populaires, possèdent un fond blanc et une ombre 
+#populaires a /* Définition des dimensions de cartes de la partie populaires, possèdent un fond blanc et une ombre 
 Le contenu des cartes est centré */
 {
 	margin: auto;
 	background-color: #FFFFFF;
 	border-radius: 10px;
 	box-shadow: 3px 3px 5px #ECEBEB;
-	
 	width: 90%;
 	height: 130px;
+}
+
+#populaires figure
+{
+	margin: auto;
 }
 
 #activity h2
@@ -358,16 +366,19 @@ Le contenu des cartes est centré */
 }
 
 
-#activites figure /* les cartes de l'encart activités ont des bords ronds, ombres et marge de 15px.
+#activites a /* les cartes de l'encart activités ont des bords ronds, ombres et marge de 15px.
 Le fond est blanc */
 {
 	border-radius: 20px;
 	box-shadow: 3px 3px 5px #F2F2F2;
 	background-color: #FFFFFF;
 	display: flex;
-	
 	margin: 10px;
 	padding: 0px;
+}
+#activites figure
+{
+	margin: auto;
 }
 
 #activites figure figcaption /* Agrandissement de la marge intérieure de la légende des photos */

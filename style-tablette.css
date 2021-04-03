@@ -1,9 +1,9 @@
-#resultsglobal
+#resultsglobal /* Les résultats populaires et hébergement passent en colonne */
 {
 	flex-direction: column;
 }
 
-#populaires /* Changement de l'ordre et annulation des bords arrondis */
+#populaires /* Changement de l'ordre et de la disposition de la section populaire, en colonne */
 {
 	order:1;
 	width: 100%;
@@ -13,9 +13,15 @@
 	justify-content: space-around;
 }
 
-#populaires figure
+#populaires a /* Mise en place d'une marge en bas sur les cartes de la section populaires */
 {
 	margin-bottom: 10px;
+	max-width: 600px;
+}
+
+#populaires figure
+{
+	margin: auto;
 }
 
 #hebergements /* Changement de l'ordre et annulation des bords arrondis. Fond blanc */
@@ -30,22 +36,33 @@
 	margin-left: 0px;
 }
 
-#carteshebergements figure
+#carteshebergements a /* Les cartes de la section hébergement occupent presque la moitié de la largeur de l'écran */
 {
 	width: 45%;
 }
 
-#activites /* Mise en place des blocs activités en colonne */
+#carteshebergements figure
+{
+	margin:auto;
+}
+
+#activites /* Mise en place des blocs activités en flex */
 {
 	display: flex;
 	flex-direction: row;
 }
 
-#activites figure /* Suppression des marges gauche et droite des cartes activités */
+#activites a /* Suppression des marges gauche et droite des cartes activités
+Les cartes occupent presque la moitié de la largeur de l'écran */
 {
 	margin-left: 0px;
 	margin-right: 0px;
 	width: 45%;
+}
+
+#activites figure
+{
+	margin: auto;
 }
 
 #activites img /* Définition de la taille des images activités */
@@ -54,12 +71,12 @@
 	height: 150px;
 }
 
-.blocactivitesleft 
+.blocactivitesleft /* Annulation du display flex attribué aux petites images activités sur desk */
 {
 	display: contents;
 }
 
-.blocactivitesright 
+.blocactivitesright /* Annulation du display flex attribué aux petites images activités sur desk */
 {
 	display: contents;
 }
