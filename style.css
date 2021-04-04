@@ -267,13 +267,13 @@ Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
 	background-color: #FFFFFF;
 	border-radius: 10px;
 	box-shadow: 3px 3px 5px #ECEBEB;
-	width: 270px;
-	height: 200px;
+	width: 30%;
+	height: 220px;
 }
 
 #carteshebergements figure
 {
-	margin: auto;
+	margin: 0px;
 }
 
 #carteshebergements h3 /* Réduction de la marge intérieure pour les H3 des cartes hébergements */
@@ -283,7 +283,7 @@ Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
 
 #carteshebergements p /* Réduction de la marge intérieure pour les p des cartes hébergement */
 {
-	margin: 2px;
+	margin: 4px;
 }
 
 #populaires /* Définition des résultats populaires en flex box, occupe 27% de la taille de l'écran, fond gris et bords arrondis */
@@ -376,9 +376,11 @@ Le fond est blanc */
 	margin: 10px;
 	padding: 0px;
 }
+
 #activites figure
 {
 	margin: auto;
+
 }
 
 #activites figure figcaption /* Agrandissement de la marge intérieure de la légende des photos */
@@ -397,20 +399,23 @@ Le fond est blanc */
 
 .imgpetite /* Défintion de la taille des petites images dans le bloc activité */
 {
-	width: 330px;
+	width: 100%;
 	height: 190px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
 
+
 .blocactivitesleft /* Les petites images de gauche dans activités sont en colonne */
 {
 	display: flex;
 	flex-direction: column;
+	width: 25%;
 }
 
 .blocactivitesright /* Les petites images de droite dans activités sont en colonne */
 {
+	width: 25%;
 	display: flex;
 	flex-direction: column;
 }

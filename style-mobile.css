@@ -120,7 +120,7 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 
 #populaires a /* Définition de la taille des cartes Populaires */
 {
-	height: 180px;
+	height: 200px;
 	width: 95%;
 	margin: auto;
 	margin-bottom: 20px;
@@ -135,7 +135,7 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 #populaires img /* Définition de la taille des images Populaires */
 {
 	height: 95%;
-	width: 200px;
+	width: 180px;
 }
 
 #populaires figcaption /* La légende de chaque carte doit occuper 100% de la hauteur */
@@ -211,6 +211,16 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 #activites figure figcaption /* Agrandissement de la marge intérieure de la légende des photos */
 {
 	padding: 20px;
+}
+
+.blocactivitesleft /* Les petites images de gauche dans activités sont en colonne */
+{
+	width: 100%;
+}
+
+.blocactivitesright /* Les petites images de droite dans activités sont en colonne */
+{
+	width: 100%;
 }
 
 footer /* Mise en page du footer en colonne */
