@@ -19,12 +19,12 @@
 	max-width: 600px;
 }
 
-#populaires figure
+#populaires figure /* Définition de la marge des figures de la section populaires */
 {
 	margin: auto;
 }
 
-#hebergements /* Changement de l'ordre et annulation des bords arrondis. Fond blanc */
+#hebergements /* Changement de l'ordre et mise en place d'un fond blanc */
 {
 	order:2;
 	background-color: #FFFFFF;
@@ -41,12 +41,12 @@
 	width: 45%;
 }
 
-#carteshebergements figure
+#carteshebergements figure /* Défintion de la marge des figures de la section hébergements */
 {
 	margin:0px;
 }
 
-#activites /* Mise en place des blocs activités en flex */
+#activites /* Mise en place des blocs activités en flex horizontal */
 {
 	display: flex;
 	flex-direction: row;
@@ -60,7 +60,7 @@ Les cartes occupent presque la moitié de la largeur de l'écran */
 	width: 45%;
 }
 
-#activites figure
+#activites figure /* Défintion de la marge des figures de la section activités */
 {
 	margin: auto;
 }

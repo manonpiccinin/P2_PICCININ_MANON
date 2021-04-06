@@ -1,5 +1,5 @@
 
-header
+header /* Mise en place du header en colonne */
 {
 	display: flex;
 	flex-direction: column;
@@ -15,7 +15,7 @@ li[class="inscription"] /* Inscription sort du flux HTML pour se positionner en 
 	margin: 20px;
 }
 
-nav /* Le menu occupe 100% de la largeur de la page */
+nav /* Le reste du menu occupe 100% de la largeur de la page */
 {
 	width: 100%;
 }
@@ -50,13 +50,13 @@ li[class="searchmenu"]:hover /* au survol des liens du menu, le texte et la bord
 	justify-content: center;
 }
 
-.searchmenu a:hover
+.searchmenu a:hover /* Suppression de l'effet qu'il y avait au survol sur le texte du menu */
 {
 	border-bottom: none;
 	border-top: none;
 }
 
-form /* Le moteur de recherche occupe 100% de la largeur */
+form /* Le moteur de recherche occupe 100% de la largeur de la fenêtre */
 {
 	width: 100%;
 }
@@ -72,7 +72,7 @@ input[type="search"] /* la zone de saisie occupe 100% de l'espace restant entre 
 	border-radius: 10px;
 }
 
-#rechercher span /* le bouton Rechercher est invisible sur mobile */
+#rechercher span /* le bouton avec le texte Rechercher est invisible sur mobile */
 {
 	display: none;
 }
@@ -87,22 +87,22 @@ input[type="search"] /* la zone de saisie occupe 100% de l'espace restant entre 
 	width: 50px;
 }
 
-#filtres h3
+#filtres h3 /* Le titre FILTRES occupe 100% de la largeur de la fenêtre */
 {
 	width: 100%;
 }
 
-.searchfilter
+.searchfilter /* Suppression de la marge des boutons de filtres */
 {
 	margin-left: 0px;
 }
 
-#resultsglobal
+#resultsglobal /* Les résultats de recherches passent en colonne */
 {
 	flex-direction: column;
 }
 
-#populaires /* Changement de l'ordre et annulation des bords arrondis */
+#populaires /* Changement de l'ordre des résultats et annulation des bords arrondis */
 {
 	order:1;
 	border-radius: 0px;
@@ -127,7 +127,7 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 	padding-bottom: 2px;
 }
 
-#populaires figure
+#populaires figure /* Définition de la hauter des figures des cartes Populaires */
 {
 	height: 100%;
 }
@@ -151,7 +151,7 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 	width: 100%;
 }
 
-#carteshebergements /* Les cartes de la partie hébergements s'affichent en colonnes */
+#carteshebergements /* Les cartes de la partie hébergements s'affichent en colonne */
 {
 	display: flex;
 	flex-direction: column;
@@ -213,12 +213,12 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 	padding: 20px;
 }
 
-.blocactivitesleft /* Les petites images de gauche dans activités sont en colonne */
+.blocactivitesleft 
 {
 	width: 100%;
 }
 
-.blocactivitesright /* Les petites images de droite dans activités sont en colonne */
+.blocactivitesright 
 {
 	width: 100%;
 }

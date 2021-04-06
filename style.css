@@ -43,7 +43,7 @@ a /* Suppression du soulignement auto des liens */
 }
 
 
-img[id="logo"]
+img[id="logo"] /* Définition de la taille du logo du site */
 {
 	width: 100px;
 }
@@ -66,7 +66,7 @@ img /* Les images seront rognées et pas déformées si elles dépassent les dim
 	border-top: 2px solid #FFFFFF;
 }
 
-.searchmenu a:hover /* au survol des liens du menu, le texte passe et la bordure au dessus passent en bleu */
+.searchmenu a:hover /* au survol des liens du menu, le texte et la bordure au dessus passent en bleu */
 {
 	color: #0065FC;
 	border-top: 2px solid;
@@ -94,7 +94,7 @@ Définition d'une bordure grise de 1px, couleur de fond grise et bords arrondis 
 	border-radius: 12px;
 }
 
-#barrerecherche span i /* Définition de la dimension du picto du moteur de recherche, qui est centré et aligné */
+#barrerecherche span i /* Définition de la dimension du picto localisation du moteur de recherche, qui est centré et aligné */
 {
 	display: flex;
 	justify-content: center;
@@ -133,7 +133,7 @@ input[type="search"] /* Suppression de la bordure auto du champ de recherche */
 	margin: 0;
 }
 
-#rechercher i /* Suppression de l'icone loupe */
+#rechercher i /*  L'icone loupe est masquée*/
 {
 	display: none;
 }
@@ -160,7 +160,7 @@ input[type="search"] /* Suppression de la bordure auto du champ de recherche */
 
 }
 
-.searchfilter:hover /* au survol, les filtres passent en bleu avec typo blanche */
+.searchfilter:hover /* au survol, le fond des filtres passent en bleu avec typo blanche */
 {
 	background-color: #0065FC;
 	color: #FFFFFF;
@@ -206,28 +206,27 @@ On laisse une marge droite pour ne pas coller le texte qui suit */
 }
 
 
-.etoilesbleues
+.etoilesbleues /* Définition de la taille et la couleur des étoiles bleues */
 {
 	color: #0065FC;
 	font-size: 12px;
 }
 
-.etoilesgrises
+.etoilesgrises /* Définition de la taille et la couleur des étoiles grises */
 {
 	color: #F2F2F2;
 	font-size: 12px;
 }
 
 
-#resultsglobal /* Définition des résultats de recherche en flexbox pour affichage des blocs à l'horizontal */
+#resultsglobal /* Définition des résultats de recherche en flexbox pour affichage des blocs Hébergements et Populaires à l'horizontal */
 {
 	display: flex;
 	justify-content: space-around;
 }
 
 
-#hebergements /* Les résultats hébergements occupent 70% de la largeur de l'écran avec un fond gris et des bors arrondis.
-Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
+#hebergements /* Les résultats hébergements occupent 70% de la largeur de l'écran avec un fond gris et des bors arrondis */
 {
 
 	width: 70%;
@@ -242,7 +241,7 @@ Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
 }
 
 
-.textehebergement
+.textehebergement /* Définition d'une marge à gauche pour les textes -hors cartes- de la partie hébergements */
 {
 	margin-left: 27px;
 }
@@ -257,7 +256,8 @@ Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
 }
 
 
-#carteshebergements a /* les cartes de la partie hébergement sont en flexbox et vont à la ligne automatiquement quand plus de place. Elles possèdent un fond blanc et une ombre */
+#carteshebergements a /* les cartes de la partie hébergement sont en flexbox et vont à la ligne automatiquement quand plus de place. 
+Elles possèdent un fond blanc et une ombre */
 {
 	display: flex;
 	flex-wrap: wrap;
@@ -271,7 +271,7 @@ Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
 	height: 220px;
 }
 
-#carteshebergements figure
+#carteshebergements figure /* Annulation de la marge par défaut des figure hébergements */
 {
 	margin: 0px;
 }
@@ -286,7 +286,7 @@ Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
 	margin: 4px;
 }
 
-#populaires /* Définition des résultats populaires en flex box, occupe 27% de la taille de l'écran, fond gris et bords arrondis */
+#populaires /* Définition des résultats populaires en flex box vertical, occupe 28% de la largeur de la fenêtre, fond gris et bords arrondis */
 {
 	display: flex;
 	flex-wrap: wrap;
@@ -298,26 +298,26 @@ Les éléments H1, cartes et Afficher plus sont organisés en colonne. */
 	margin-right: 10px;
 }
 
-#populaires figcaption
+#populaires figcaption /* Définition de la hauteur des légendes des cartes populaires, qui sont en colonne */
 {
 	display: flex;
 	flex-direction: column;
 	height: 130px;
 }
 
-#populaires figcaption h3
+#populaires figcaption h3 /* Définition des marges des titres des cartes populaires */
 {
 	margin-bottom: 2px;
 	margin-top: 5px;
 }
 
-#populaires figcaption p
+#populaires figcaption p /* Définition des marges des p des cartes populaires */
 {
 	margin-bottom: 2px;
 }
 
 
-h2[id="titrepop"]
+h2[id="titrepop"] /* Le titre de la rubrique populaire est en flex, pour s'espacer avec le picto */
 {
 	display: flex;
 	justify-content: space-between;
@@ -347,12 +347,12 @@ Le contenu des cartes est centré */
 	height: 130px;
 }
 
-#populaires figure
+#populaires figure /* Définition de la marge des figures populaires */
 {
 	margin: auto;
 }
 
-#activity h2
+#activity h2 /* Définition de la marge gauche du titre principal de la rubrique activités*/
 {
 	margin-left: 20px;
 }
@@ -377,7 +377,7 @@ Le fond est blanc */
 	padding: 0px;
 }
 
-#activites figure
+#activites figure /* Définition de la marge des figures activités */
 {
 	margin: auto;
 
