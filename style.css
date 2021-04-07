@@ -243,7 +243,7 @@ On laisse une marge droite pour ne pas coller le texte qui suit */
 
 .textehebergement /* Définition d'une marge à gauche pour les textes -hors cartes- de la partie hébergements */
 {
-	margin-left: 27px;
+	margin-left: 15px;
 }
 
 #carteshebergements img /* Définition de la taille des images pour les résultat hébergements. Les angles du haut sont arrondis */
@@ -271,9 +271,11 @@ Elles possèdent un fond blanc et une ombre */
 	height: 220px;
 }
 
-#carteshebergements figure /* Annulation de la marge par défaut des figure hébergements */
+#carteshebergements figure /* Annulation de la marge par défaut des figure hébergements
+et les figures occupent 100% de la largeur */
 {
 	margin: 0px;
+	width: 100%;
 }
 
 #carteshebergements h3 /* Réduction de la marge intérieure pour les H3 des cartes hébergements */
@@ -380,7 +382,7 @@ Le fond est blanc */
 #activites figure /* Définition de la marge des figures activités */
 {
 	margin: auto;
-
+	width: 100%;
 }
 
 #activites figure figcaption /* Agrandissement de la marge intérieure de la légende des photos */

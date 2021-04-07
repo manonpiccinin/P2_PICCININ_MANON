@@ -1,3 +1,7 @@
+body /* Suppression de la marge du body */
+{
+	margin: 0px;
+}
 
 header /* Mise en place du header en colonne */
 {
@@ -5,6 +9,11 @@ header /* Mise en place du header en colonne */
 	flex-direction: column;
 	align-items: flex-start;
 	position: relative;
+}
+
+img[id="logo"] /* Ajout d'une marge à gauche du logo pour le décoller du rebord de la page */
+{
+	margin-left: 8px;
 }
 
 li[class="inscription"] /* Inscription sort du flux HTML pour se positionner en haut à droite */
@@ -56,9 +65,17 @@ li[class="searchmenu"]:hover /* au survol des liens du menu, le texte et la bord
 	border-top: none;
 }
 
-form /* Le moteur de recherche occupe 100% de la largeur de la fenêtre */
+.intro /* Mise en place de marge pour les textes d'intro du site et les décoller des bords de la page */
 {
-	width: 100%;
+	margin: 8px;
+}
+
+form /* Le moteur de recherche occupe 100% de la largeur de la fenêtre (hors marge) */
+{
+	width: calc(100% - 16px);
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 15px;
 }
 
 input[type="search"] /* la zone de saisie occupe 100% de l'espace restant entre les 2 pictos */
@@ -87,9 +104,19 @@ input[type="search"] /* la zone de saisie occupe 100% de l'espace restant entre 
 	width: 50px;
 }
 
+#filtres /* Mise en place d'une marge sur les filtres pour les décoller des rebords de la page */
+{
+	margin: 8px;
+}
+
 #filtres h3 /* Le titre FILTRES occupe 100% de la largeur de la fenêtre */
 {
 	width: 100%;
+}
+
+#inforesults /* Mise en place d'une marge sur la phrase d'info pour la décoller des rebords de la page */
+{
+	margin: 8px;
 }
 
 .searchfilter /* Suppression de la marge des boutons de filtres */
@@ -108,6 +135,7 @@ input[type="search"] /* la zone de saisie occupe 100% de l'espace restant entre 
 	border-radius: 0px;
 	width: 100%;
 	margin:auto;
+	margin-bottom: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -159,7 +187,7 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 
 .textehebergement /* Suppression de la marge à gauche pour le titre de la partie hébergements */
 {
-	margin-left: 0px;
+	margin: 8px;
 }
 
 #carteshebergements  img /* Définition de la taille des images pour la partie hébergements */
@@ -183,6 +211,11 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 #carteshebergements figcaption p /* Définition marge intérieure des p des cartes hébergements */
 {
 	padding: 2px;
+}
+
+#activity
+{
+	margin: 8px;
 }
 
 #activity h2 /* Suppression de la parge gauche du titre activité */
