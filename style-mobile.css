@@ -210,7 +210,7 @@ h2[id="titrepop"] /* Suppression du padding pour le titre du bloc Populaires */
 
 #carteshebergements figcaption p /* Définition marge intérieure des p des cartes hébergements */
 {
-	padding: 2px;
+	padding-bottom: 2px;
 }
 
 #activity
